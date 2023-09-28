@@ -1,0 +1,25 @@
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+thead {
+	background-color: #333;
+	color: white;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+}
+.imagelist {
+	display: flex;
+	flex-direction: row;
+	gap: 2vw;
+}
+.imagelist img{
+	width:20%;
+	height:max-content;
+}

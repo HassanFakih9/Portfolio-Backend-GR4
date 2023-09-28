@@ -14,13 +14,12 @@ app.use(cors()); // Allow all origins for development; adjust for production
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
-require('dotenv').config();
 
 // Create a directory to store uploaded images
-const uploadDirectory = path.join(__dirname, '..', 'uploads');
+const uploadDirectory = path.join(__dirname, 'uploads');
 fs.mkdirSync(uploadDirectory, { recursive: true });
 
-
+// Configure multer to handle file uploads
 const storage = multer.diskStorage({
   destination: uploadDirectory,
   filename: (req, file, cb) => {
@@ -30,7 +29,8 @@ const storage = multer.diskStorage({
   },
 });
 
-const upload = multer({ storage :storage});
+const upload = multer({ storage });
+
 // ...
 
 
@@ -45,12 +45,12 @@ app.use('/api/education', educationRoutes);
 app.use('/api/experience', experienceRoutes);
 app.use('/api/projects', projectsRoutes);
 app.use(upload.single('image')); 
-app.use('/images', express.static(path.join(__dirname, 'uploads')));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-const uri = process.env.DB_URL;
+const uri = "mongodb+srv://hassanfakih80:HAB5JwSKd0RgwwNb@cluster0.adyejpk.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
