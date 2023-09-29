@@ -1,0 +1,19 @@
+.center-container {
+
+    height: 50px; /* Cette propriété assure que le conteneur occupe toute la hauteur de l'écran. */
+    display: flex;
+    justify-content: center;
+    background-color:#D9D9D9;
+      color: whitesmoke;
+      margin-left: -50px;
+      margin-top: 25px;
+  }
+  
+  .centered-button {
+    /* Styles pour le bouton, par exemple : */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }

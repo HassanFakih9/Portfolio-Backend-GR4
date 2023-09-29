@@ -1,0 +1,119 @@
+/* styles.css */
+
+/* Style the header in normal orange */
+header {
+    background-color: darkorange;
+    color: black;
+    margin-left: -50px;
+  }
+  
+  /* Style the navigation bar in dark orange */
+  nav {
+    background-color: darkorange;
+    color: black;
+  }
+  
+  .container {
+    color: black;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: orange; /* Change to the desired hover color */
+  }
+  
+  .greetings {
+    font-size: x-large;
+    color: white;
+    font-style: italic;
+    background-color: #fbb38c;
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+    width: 100%;
+  
+  }
+  
+  .myName {
+    font-size: xx-large;
+    background-color: #fbb38c;
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    width: 100%;
+  
+  }
+  
+  
+  .text-content {
+    background-color: #fbb38c;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    padding: 10px;
+    padding-bottom: -100px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .paragraph {
+    color : white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .text-image-section {
+  
+    height: 500px;
+    width: 500px;
+    padding-right: 50px;
+    padding: -300px;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  

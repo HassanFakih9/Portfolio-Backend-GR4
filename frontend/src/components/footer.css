@@ -1,0 +1,53 @@
+footer {
+    text-align: center;
+    margin-top: 50px
+
+  }
+    
+  .container-social {
+
+    background-color:#D9D9D9;
+      color: whitesmoke;
+      margin-left: -50px;
+      margin-top: 25px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 20px;
+    height: 50px;
+    background-color: rgb(255, 196, 206);
+    
+  }
+
+  .social {
+    display: flex;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .copy {
+    margin-top: 100px;
+    background-color: #FBB38C;
+  }
+  .p1 {
+    color :white;
+    font-size: 15px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    
+  }
+  .p2 {
+    text-emphasis-color: black;
+    text-align: center;
+    font-size: smaller;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 196, 206);
+    height: 50px;
+  }

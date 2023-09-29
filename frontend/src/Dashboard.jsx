@@ -193,12 +193,13 @@ const Dashboard = () => {
           </ul>
         </nav>
 
-        <Routes> {/* Use Routes as the container */}
+        <Routes> 
           <Route path="/skills" element={<SkillsComponent />} />
           <Route path="/educations" element={<EducationsComponent />} />
           <Route path="/experiences" element={<ExperiencesComponent />} />
           <Route path="/projects" element={<ProjectsComponent />} />
-        </Routes>
+          <Route path="../Dashboard" element={<Dashboard/>}/>
+        </Routes> 
 
 
       </div>
