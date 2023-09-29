@@ -50,7 +50,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-const uri = process.env.DB_URL;
+const uri = 'mongodb+srv://hassanfakih80:HAB5JwSKd0RgwwNb@cluster0.adyejpk.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,

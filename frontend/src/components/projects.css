@@ -8,6 +8,7 @@ body {
     width: 300px;
     height: 300px;
     perspective: 1000px;
+    margin-bottom: 100px;
   }
 
   .flip-card-inner {
@@ -20,7 +21,8 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .flip-card:hover .flip-card-inner {
+  .flip-card:hover 
+  .flip-card-inner {
     transform: rotateY(180deg);
   }
 
@@ -48,9 +50,8 @@ body {
   }
   .cards {
     display: flex;
-    margin: 10px;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   h1 {
     text-align: center;

@@ -25,9 +25,9 @@ function App() {
       <Dashboard/>
       <Header/>
       <TextImageSection/>
-      <Skills />
-      <Projects />
       <Experience />
+      <Projects />
+      <Skills />
       <DownloadButton />
       <GitHubLink />
       <LinkedInImage />

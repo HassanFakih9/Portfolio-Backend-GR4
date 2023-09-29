@@ -15,7 +15,6 @@ header {
   
   .container {
     color: black;
-    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -24,6 +23,7 @@ header {
   
   nav ul {
     list-style: none;
+    margin: -1px;
     display: flex;
   }
   
@@ -53,21 +53,23 @@ header {
     background-color: #fbb38c;
     display: flex;
     flex-direction: row;
-    padding: 60px;
-    width: 100%;
+    padding: 63px;
   
   }
   
   .myName {
     font-size: xx-large;
+    color: black;
     background-color: #fbb38c;
     display: flex;
     flex-direction: row;
-    padding-left: 60px;
     margin-top: -30px;
     margin-bottom: -10px;
-    width: 100%;
   
+  }
+
+  .Layla {
+    margin: 40px;
   }
   
   

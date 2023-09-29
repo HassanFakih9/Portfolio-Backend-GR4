@@ -23,21 +23,21 @@ const Skills = () => {
   }, []);
 
   return (
-
+    <div>
+    <div>
+      <h1 className='Skills-title'>SKILLS</h1>
+    </div>
     <div className='container1'>
    {images.map((imageUrl, index) => (
       <div className='cont-img' style=
       {{backgroundImage:`url(http://localhost:5000/images/${imageUrl})`,
       backgroundSize: 'cover', 
-        width: '150px', 
         height: '150px',
         backgroundRepeat: 'no-repeat',
-      }}>
-    
-
-          
+      }}>  
       </div>
       ))}
+    </div>
     </div>
   );
 };

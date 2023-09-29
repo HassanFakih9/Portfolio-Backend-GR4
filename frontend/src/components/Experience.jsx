@@ -1,6 +1,5 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-
 
 function Experience() {
   let currentCard = 1;
@@ -23,19 +22,21 @@ function Experience() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/experience');
+        const response = await axios.get(
+          "http://localhost:5000/api/experience"
+        );
         const experiences = response.data;
         const data = experiences.map((experience) => ({
           companyName: experience.company_name,
           jobTitle: experience.job_title,
           startDate: experience.start_date,
           endDate: experience.end_date,
-          accomplishments: experience.accomplishments
+          accomplishments: experience.accomplishments,
         }));
         setData(data);
         console.log(data);
       } catch (error) {
-        console.error('Failed to fetch images:', error);
+        console.error("Failed to fetch images:", error);
       }
     };
 
@@ -52,9 +53,13 @@ function Experience() {
             &lt;
           </div>
         </div>
-        
+
         {data.map((experience, index) => (
-          <div key={index} className={`card${index + 1}`} style={{ display: currentCard === index + 1 ? "block" : "none" }}>
+          <div
+            key={index}
+            className={`card${index + 1}`}
+            style={{ display: currentCard === index + 1 ? "block" : "none" }}
+          >
             <div className="card">
               <div className="container">
                 <div className="title-date">
@@ -63,6 +68,7 @@ function Experience() {
                   </div>
                   <div className="date">
                     <h2>{experience.startDate}</h2>
+                    <h2>{experience.endDate}</h2>
                   </div>
                 </div>
                 <p>{experience.accomplishments}</p>
