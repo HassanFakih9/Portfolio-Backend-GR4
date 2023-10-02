@@ -1,19 +1,20 @@
 .center-container {
+  height: 50px; /* Cette propriété assure que le conteneur occupe toute la hauteur de l'écran. */
+  display: flex;
+  justify-content: center;
+  background-color: #d9d9d9;
+  color: whitesmoke;
+  margin-left: 0px;
+  margin-top: -10px;
+  margin-bottom: 70px;
+}
 
-    height: 50px; /* Cette propriété assure que le conteneur occupe toute la hauteur de l'écran. */
-    display: flex;
-    justify-content: center;
-    background-color:#D9D9D9;
-      color: whitesmoke;
-      margin-left: -50px;
-      margin-top: 25px;
-  }
-  
-  .centered-button {
-    /* Styles pour le bouton, par exemple : */
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+.centered-button {
+  /* Styles pour le bouton, par exemple : */
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 120px;
+}

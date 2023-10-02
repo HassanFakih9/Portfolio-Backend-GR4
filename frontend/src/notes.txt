@@ -1,0 +1,25 @@
+1 - Dashboard
+    .Person icon instead of "Dashboard" and her name 
+    .Login form 
+
+2 - Header
+    .Minimize Width 
+    .Colors mint green or baby blue instead of orange 
+    .Nav Bar white instead of black
+
+3 - Experience
+    .Remove date input and put text input
+    .Make arrows icons
+    .Experiences should be above each others
+
+4 - Projects
+    .Put border radius
+
+5 - Skills
+    .Put sub-titles for each skill 
+    .Minimize spacing
+
+6 - Get in touch
+    .Put only icons
+    .Put phone icon 
+

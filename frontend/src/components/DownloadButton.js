@@ -1,4 +1,5 @@
 import React from 'react';
+import "./DownloadButton.css";
 
 function DownloadButton() {
   // Remplacez 'nom-de-votre-fichier.pdf' par le nom de votre fichier PDF
@@ -19,7 +20,7 @@ function DownloadButton() {
     <div className="center-container">
   
     <button className="centered-button" onClick={handleDownload}>
-      Télécharger le CV
+      Download My CV
     </button>
  
   </div>
