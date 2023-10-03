@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 function Experience() {
   let currentCard = 1;
+  const iconSize = '3em'; // Adjust the size as per your requirement
 
   function showCard(direction) {
     if (direction === "left") {
@@ -48,10 +51,8 @@ function Experience() {
       <h1>EXPERIENCE</h1>
 
       <div className="left-right">
-        <div className="arrow-container">
-          <div className="left-arrow arrow" onClick={() => showCard("left")}>
-            &lt;
-          </div>
+        <div className="left-arrow arrow" onClick={() => showCard("left")}>
+          <ArrowCircleLeftIcon style={{ color: "#89CFF0", fontSize: iconSize }} />
         </div>
 
         {data.map((experience, index) => (
@@ -65,22 +66,22 @@ function Experience() {
                 <div className="title-date">
                   <div className="title">
                     <h2>{experience.companyName} </h2>
-                  </div>
-                  <div className="date">
                     <h2>{experience.startDate}</h2>
                     <h2>{experience.endDate}</h2>
                   </div>
                 </div>
-                <p>{experience.accomplishments}</p>
+                <ul key={index}>
+                {experience.accomplishments.map((item, index) => (
+                    <li>{item}</li>  
+                ))}
+                </ul>
               </div>
             </div>
           </div>
         ))}
 
-        <div className="arrow-container">
-          <div className="right-arrow arrow" onClick={() => showCard("right")}>
-            &gt;
-          </div>
+        <div className="right-arrow arrow" onClick={() => showCard("right")}>
+          <ArrowCircleRightIcon style={{ color: "#89CFF0", fontSize: iconSize }} />
         </div>
       </div>
     </div>

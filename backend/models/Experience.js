@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const ExperienceSchema = new mongoose.Schema({
   company_name: String,
   job_title: String,
-  start_date: Date,
-  end_date: Date,
+  start_date: String,
+  end_date: String,
   accomplishments: [String],
 });
 

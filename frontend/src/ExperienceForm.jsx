@@ -1,8 +1,12 @@
+
+
+
 import React, { useState } from 'react';
 import axios from 'axios';
 
 
 const ExperienceForm = ({ handleExperienceSubmit }) => {
+
     const [experienceData, setExperienceData] = useState({
         company_name: '',
         job_title: '',
@@ -48,7 +52,7 @@ const ExperienceForm = ({ handleExperienceSubmit }) => {
                 }
             />
             <input
-                type="date"
+                type="text"
                 placeholder="Start Date"
                 value={experienceData.start_date}
                 onChange={(e) =>
@@ -59,7 +63,7 @@ const ExperienceForm = ({ handleExperienceSubmit }) => {
                 }
             />
             <input
-                type="date"
+                type="text"
                 placeholder="End Date"
                 value={experienceData.end_date}
                 onChange={(e) =>

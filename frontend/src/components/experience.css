@@ -36,4 +36,16 @@
 
   .date {
     padding: 2px 16px;
+    display: flex;
+
+  }
+  .right-arrow arrow{
+    color: #89CFF0;
+    width: 50px;
+    height: 50px;
+  }
+  .left-arrow arrow{
+  color: #89CFF0;
+  width: 50px;
+  height: 50px;
   }

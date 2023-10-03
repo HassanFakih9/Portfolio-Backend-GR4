@@ -1,3 +1,7 @@
+*{
+  font-size: 25px;
+  font-family: Roboto,sans-serif;
+}
 table {
   border-collapse: collapse;
 }
@@ -70,7 +74,8 @@ body {
 .flip-card-front {
   background-color: #fbb38c;
   color: black;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
   font-size: 20px;
 }
 
