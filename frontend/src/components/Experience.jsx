@@ -65,9 +65,9 @@ function Experience() {
               <div className="container">
                 <div className="title-date">
                   <div className="title">
-                    <h2>{experience.companyName} </h2>
-                    <h2>{experience.startDate}</h2>
-                    <h2>{experience.endDate}</h2>
+                    <h2 className="date">{experience.companyName} </h2>
+                    <h2 className="date">{experience.startDate}</h2>
+                    <h2 className="date">{experience.endDate}</h2>
                   </div>
                 </div>
                 <ul key={index}>

@@ -1,17 +1,17 @@
 
 import React from "react";
-import "./LinkedInImage.css";
+import "./footer.css";
+import { FaLinkedin } from "react-icons/fa";
 
 const LinkedInImage = () => {
   const linkedinUrl = "https://www.linkedin.com/in/laylaAboSaad/";
 
   return (
-    <div className="social-container">
       <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
-        <img src="./images/linkedin.png" alt="LinkedIn" />
+        <FaLinkedin className="linkedin" />
       </a>
-    </div>
   );
 };
 
 export default LinkedInImage;
+

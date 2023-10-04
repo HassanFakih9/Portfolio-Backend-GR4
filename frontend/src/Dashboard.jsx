@@ -5,35 +5,39 @@ import "./App.css"
 
 
 const Dashboard = () => {
-    
+
 
 
     return (
-        
+
             <div>
-           
-            
+
+
                 <nav >
                     <ul>
-                        
+
                         <li>
-                            
-                            <Link to="/experiences">Experiences</Link>
-                        </li>
-                        <li>                
-                            <Link to="/projects">Projects</Link>
+                            <Link to="/Editskills">Skills</Link>
                         </li>
                         <li>
-                            <Link to="/skills">Skills</Link>
+                            <Link to="/Editeducations">Educations</Link>
                         </li>
                         <li>
-                            <Link to="/projects">Projects</Link>
+                            <Link to="/Editexperiences">Experiences</Link>
+                        </li>
+                        <li>
+                            <Link to="/Editprojects">Projects</Link>
                         </li>
                     </ul>
                 </nav>
 
-              
+
             </div>
-    )};
+
+
+    );
+}
+
+
 
 export default Dashboard;

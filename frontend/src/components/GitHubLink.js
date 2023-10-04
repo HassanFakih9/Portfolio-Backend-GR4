@@ -1,6 +1,5 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import "./GitHubLink.css";
 import "./footer.css";
 
 function GitHubLink() {
@@ -8,8 +7,8 @@ function GitHubLink() {
 
   return (
     <div className="social-container">
-      <a href={githubProfileURL} target="_blank" rel="noopener noreferrer">
-        <FaGithub /> GitHub
+      <a href={githubProfileURL} className="github" target="_blank" rel="noopener noreferrer">
+        <FaGithub />
       </a>
     </div>
   );

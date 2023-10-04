@@ -5,10 +5,8 @@ import img from "./myimage.png";
 const TextImageSection = () => {
   return (
     <>
-      <div className="greetings">Hi Everyone, I am</div>
-      <div>
-        <h1 className="myName">Layla Abo Saad</h1>
-      </div>
+    <div>
+      <h1 className="myName">Layla Abo Saad</h1></div>
       <div className="text-content">
         <p className="paragraph">
           I am a Full Stack Web Developer with a passion for building creative

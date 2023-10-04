@@ -6,6 +6,7 @@ import "./skills.css"
 
 const Skills = () => {
   const [images, setImages] = useState([]);
+  const [skills, setSkills] = useState([]);
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -37,6 +38,9 @@ const Skills = () => {
       }}>  
       </div>
       ))}
+      <div className='subskills'>
+      {skills.map((skill, index) => ( <p key={index} >{skill.name}</p>))}
+      </div>
     </div>
     </div>
   );

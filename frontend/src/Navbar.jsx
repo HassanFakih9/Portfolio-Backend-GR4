@@ -8,16 +8,16 @@ const Navbar = () => {
                 <ul>
 
                     <li>
-                        <Link to="/skills">Skills</Link>
+                        <Link to="/Editskills">Skills</Link>
                     </li>
                     <li>
-                        <Link to="/educations">Educations</Link>
+                        <Link to="/Editeducations">Educations</Link>
                     </li>
                     <li>
-                        <Link to="/experiences">Experiences</Link>
+                        <Link to="/Editexperiences">Experiences</Link>
                     </li>
                     <li>
-                        <Link to="/projects">Projects</Link>
+                        <Link to="/Editprojects">Projects</Link>
                     </li>
                 </ul>
             </nav>
@@ -25,4 +25,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+export default Navbar

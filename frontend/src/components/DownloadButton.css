@@ -2,9 +2,9 @@
   height: 50px; /* Cette propriété assure que le conteneur occupe toute la hauteur de l'écran. */
   display: flex;
   justify-content: center;
-  background-color: #d9d9d9;
-  color: whitesmoke;
+  color: rgb(237, 237, 237);
   margin-left: 0px;
+  padding-left: 70px;
   margin-top: -10px;
   margin-bottom: 70px;
 }

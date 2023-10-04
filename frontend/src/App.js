@@ -23,6 +23,8 @@ import Dashboard from "./Dashboard";
 // import LoginForm from './LoginForm';
 import "./App.css";
 import Footer from "./components/Footer";
+import HomePage from "./HomePage";
+import LoginPage from "./LoginPage";
 
 const App = () => {
   const [skills, setSkills] = useState([]);
@@ -191,53 +193,49 @@ const App = () => {
 
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
-          </ul>
-        </nav>
+        <div>
 
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/dashboard/*" element={<DashboardPage />} />
-          <Route path="/skills" element={<SkillsComponent />} />
-          <Route path="/educations" element={<EducationsComponent />} />
-          <Route path="/experiences" element={<ExperiencesComponent />} />
-          <Route path="/projects" element={<ProjectsComponent />} />
-        </Routes>
-      </div>
+
+
+
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route index element={<HomePage />} />
+                <Route path="/dashboard/*" element={<DashboardPage />} />
+                <Route path="/Editskills" element={<SkillsComponent />} />
+                <Route path="/Editeducations" element={<EducationsComponent />} />
+                <Route path="/Editexperiences" element={<ExperiencesComponent />} />
+                <Route path="/Editprojects" element={<ProjectsComponent />} />
+
+
+            </Routes>
+        </div>
     </Router>
-  );
+
+)
 };
 
-function HomePage() {
-  return (
-    <div>
-      <Header />
-      <TextImageSection />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Footer />
-    </div>
-  );
-}
+// function HomePage() {
+//   return (
+//     <div>
+//       <Header />
+//       <TextImageSection />
+//       <Experience />
+//       <Projects />
+//       <Skills />
+//       <Footer />
+//     </div>
+//   );
+// }
 
 function DashboardPage() {
   const [authenticated, setAuthenticated] = useState(false);
 
-  // if (!authenticated) {
-  //   return <LoginForm setAuthenticated={setAuthenticated} />;
-  // }
+  if (!authenticated) {
+    return <LoginPage setAuthenticated={setAuthenticated} />;
+  }
 
-  return (
-    <div>
-      <Dashboard />
-    </div>
-  );
+ 
 }
 
 export default App;
