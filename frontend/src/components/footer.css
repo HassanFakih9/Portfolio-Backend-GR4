@@ -7,38 +7,27 @@ footer {
   background-color: #89CFF0;
   display: flex;
   flex-direction: row;
-  padding-right: 0px;
-  padding-top: 0px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
-.social {
-  display: flex;
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 1%;
+  gap : 5vh;
 }
 
 .copy {
   margin-top: 100px;
 }
 .p1 {
-  font-size: x-large;
+  font-size: xx-large;
   background-color:#89CFF0;
   color: white;
-  padding-top: 0px;
-  padding-left: 0px;
-  margin-bottom: 0px;
+  padding-top: 2%;
+  width: 100vw;
+  margin-left: 2%;
 }
 .p2 {
-  background-color: #89CFF0;
   color: white;
   text-align: center;
   font-size: smaller;
-  margin-bottom: 0px;
-  height: 0px;
+  margin-bottom: 1%;
+  width: 100vw;
 }
 
 .outer-container {
@@ -46,4 +35,5 @@ footer {
   flex-direction: column;
   gap: 5vh;
   background-color: #89CFF0;
+  width: 100vw;
 }

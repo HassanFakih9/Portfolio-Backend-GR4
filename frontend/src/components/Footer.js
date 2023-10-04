@@ -10,7 +10,7 @@ const Footer = () => {
     <>
     <DownloadButton />
     <div className='outer-container'>
-    <p className="p1">Get in touch</p>
+    <p className="p1">Get in touch :)</p>
     <div className="social-container">
       <GitHubLink />
       <LinkedInImage />
